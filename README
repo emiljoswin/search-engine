@@ -1,0 +1,20 @@
+**********
+README
+**********
+
+The project aimed at building an internet search engine. 
+The intial step was to implement a crawler. The reason why I wrote a crawler myself was that
+1) I started learning python the day before and I didn't know how to use libraries
+2) I could easily build the required 'big matrix' and store pages so that they can be indexed and later applied pagerank
+
+The crawler crawled on the depth limited DFS basis. The depth was provided by the user. Due to bandwidth limitations.
+the crawling was limited to < 50 pages. The crawler produced the 'big matrix' which represented the structure of the
+crawled pages and also stored the contents of the pages for indexing.
+
+A library called Whoosh was used to index and perform search on the text. It used Okapi BM - 25 search function.
+It is a simple text search library which accounted on the occurence of words and not their relative proximities.
+
+The page rank of the pages were calculated from the 'big matrix' and the result of the search in the index was combined
+with the page rank to determine the total rank of pages. The results were displayed in the non-increasing order to the user.
+
+Emil
