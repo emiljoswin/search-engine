@@ -4,8 +4,6 @@ README
 
 The project aimed at building an internet search engine. 
 The intial step was to implement a crawler. The reason why I wrote a crawler myself was that
-1) I started learning python the day before and I didn't know how to use libraries
-2) I could easily build the required 'big matrix' and store pages so that they can be indexed and later applied pagerank
 
 The crawler crawled on the depth limited DFS basis. The depth was provided by the user. Due to bandwidth limitations.
 the crawling was limited to < 50 pages. The crawler produced the 'big matrix' which represented the structure of the
